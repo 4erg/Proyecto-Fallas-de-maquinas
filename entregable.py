@@ -194,6 +194,7 @@ def entrenar_modelo(df):
 
 def main():
     df = generar_dataset()
+    df.to_csv("fallas_maquinas.csv", index=False)
 
     imprimir_titulo(1, "EXPLORACIÓN DEL DATASET")
     print("\nPrimeros registros:")
